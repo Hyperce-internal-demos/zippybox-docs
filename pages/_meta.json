@@ -1,7 +1,7 @@
 {
   "index": "Introduction",
-  "another": "Another Page",
-  "advanced": "Advanced (A Folder)",
+  "features": "Features",
+  "email-services": "Email Services",
   "about": {
     "title": "About",
     "type": "page",
@@ -13,4 +13,5 @@
     "href": "https://hyperce-mailer.vercel.app/#contact",
     "newWindow": true
   }
+  
 }
