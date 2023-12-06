@@ -2,12 +2,12 @@
 
 ## Overview
 
-A campaign is a set of individual email messages that are sent to your [subscribers](/docs/v2/features/subscribers). An example may be a new product launch or a regular newsletter.
+A campaign is a set of individual email messages that are sent to your [subscribers](/features/subscribers). An example may be a new product launch or a regular newsletter.
 
 > Before creating a campaign, the following must already be configured:
-> - at least one [email service](/docs/v2/email-services/introduction).
-> - a list of [subscribers](/docs/v2/features/subscribers) to target with your campaign.
-> - an [email template](/docs/v2/features/templates) for your campaign (optional, but recommended).
+> - at least one [email service](/email-services/introduction).
+> - a list of [subscribers](/features/subscribers) to target with your campaign.
+> - an [email template](/features/templates) for your campaign (optional, but recommended).
 
 ## View Campaigns
 
@@ -25,7 +25,7 @@ A friendly name for your campaign that is only used within SendPortal. It helps 
 
 #### Subject
 
-The subject of your campaign email. This is what your mail recipients will see in their inbox, so you should try to keep it clear and concise. The Subject can include placeholders for the Subscriber's `{{first_name}}`, `{{last_name}}` and `{{email}}`. Refer to the Placeholders section of the [Templates](/docs/v2/features/templates) documentation for more information.
+The subject of your campaign email. This is what your mail recipients will see in their inbox, so you should try to keep it clear and concise. The Subject can include placeholders for the Subscriber's `{{first_name}}`, `{{last_name}}` and `{{email}}`. Refer to the Placeholders section of the [Templates](/features/templates) documentation for more information.
 
 #### From Name
 
@@ -51,7 +51,7 @@ Determines whether or not individual email clicks are tracked. If you wish to tr
 
 The body of your campaign email. This is what gets sent to your subscribers, so make it good!
 
-The content can include placeholders. To understand which placeholders are available to you, see the Placeholders section of the [Templates](/docs/v2/features/templates) documentation.
+The content can include placeholders. To understand which placeholders are available to you, see the Placeholders section of the [Templates](/features/templates) documentation.
 
 Once you have filled out the form, click _Save and Continue_. Your campaign will now be marked as a **Draft**.
 
@@ -80,4 +80,4 @@ You can specify one of two sending behaviours for your campaign:
 - `Queue Draft` - this will generate each of your messages as a draft and requires you to dispatch each email individually from the _Messages_ section. This is a good idea if you want to double check how each email will display prior to sending, especially if you're using a complex template that may result in each email varying from subscriber to subscriber. We do not recommend this option if you have a large list of subscribers!
 - `Send Automatically` - this will generate your messages and dispatch them automatically.
 
-> If you find that your campaigns do not send, please ensure you have configured scheduled tasks and queue workers as described in the [Additional Configuration](/docs/v2/getting-started/configuration-and-setup#additional-configuration) section.
+> If you find that your campaigns do not send, please ensure you have configured scheduled tasks and queue workers as described in the [Additional Configuration](/getting-started/configuration-and-setup#additional-configuration) section.
