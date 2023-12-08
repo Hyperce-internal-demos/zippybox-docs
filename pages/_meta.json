@@ -2,6 +2,9 @@
   "index": "Introduction",
   "features": "Features",
   "email-services": "Email Services",
+  "configuration-and-setup": {
+    "display": "hidden"
+  },
   "about": {
     "title": "About",
     "type": "page",

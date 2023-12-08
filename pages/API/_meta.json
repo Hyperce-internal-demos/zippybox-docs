@@ -3,7 +3,7 @@
     "templates": "Templates",
     "subscribers": "Subscribers",
     "tags": "Tags",
-    "tag-subscribers": "Tag Subscribers",
+    "tags-subscribers": "Tags Subscribers",
     "subscribers-tags": "Subscriber Tags",
-  "campaigns": "Campaigns"
+   "campaigns": "Campaigns"
 }
