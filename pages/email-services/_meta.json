@@ -1,9 +1,9 @@
 {
-    "introduction": "Introduction",
-    "aws-ses": "AWS SES",
-    "postmark": "Postmark",
-    "sendgrid": "Sendgrid",
-    "mailgun": "Mailgun",
-    "mailjet": "Mailjet",
+  "introduction": "Introduction",
+  "aws-ses": "AWS SES",
+  "postmark": "Postmark",
+  "sendgrid": "Sendgrid",
+  "mailgun": "Mailgun",
+  "mailjet": "Mailjet",
   "smtp": "SMTP"
 }

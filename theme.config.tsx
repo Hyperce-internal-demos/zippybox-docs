@@ -10,14 +10,14 @@ const config: DocsThemeConfig = {
     const { asPath, defaultLocale, locale } = useRouter()
     const { frontMatter } = useConfig()
     const url =
-      'https://zippbox-docs.vercel.app' +
+      'https://docs.zippybox.hyperce.io/' +
       (defaultLocale === locale ? asPath : `/${locale}${asPath}`)
  
     return (
       <>
-      <title>{frontMatter.title || 'ZippyBox Docs'}</title>
+      <title>{'ZippyBox Docs'}</title>
         <meta property="og:url" content={url} />
-        <meta property="og:title" content={frontMatter.title || 'ZippyBox Docs'} />
+        <meta property="og:title" content={'ZippyBox Docs'} />
         <meta
           property="og:description"
           content={frontMatter.description || 'Your go-to resource for comprehensive guides, API documentation, and troubleshooting solutions for seamless navigation and optimization of ZippyBox services.'}
