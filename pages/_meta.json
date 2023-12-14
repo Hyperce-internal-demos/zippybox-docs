@@ -8,12 +8,12 @@
   "about": {
     "title": "About",
     "type": "page",
-    "href": "https://hyperce-mailer.vercel.app/"
+    "href": "https://zippybox.hyperce.io/"
   },
   "contact": {
     "title": "Contact ↗",
     "type": "page",
-    "href": "https://hyperce-mailer.vercel.app/#contact",
+    "href": "https://zippybox.hyperce.io/#contact",
     "newWindow": true
   }
   

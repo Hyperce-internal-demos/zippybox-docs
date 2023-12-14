@@ -64,11 +64,11 @@ If you also want to enable e-mail tracking, you'll need to add the `AmazonSNSFul
 
 ![](/imgs/aws/aws-14.png)
 
-Selecting tags for the user is optional, so we're not going to enter any at this stage. Once the user has been created you should now be able to copy and paste the access key and secret access key to the SendPortal provider configuration.
+Selecting tags for the user is optional, so we're not going to enter any at this stage. Once the user has been created you should now be able to copy and paste the access key and secret access key to the ZippyBox provider configuration.
 
 ![](/imgs/aws/aws-15.png)
 
-We're now ready to configure the provider with SendPortal.
+We're now ready to configure the provider with ZippyBox.
 
 ![](/imgs/aws/aws-11.png)
 
@@ -80,19 +80,19 @@ If you require any more information about SES, check the official [Amazon SES do
 
 If you want to enable tracking for e-mails that you send through SES, then there are a few additional steps we need to complete.
 
-You'll need to configure Amazon's SNS (Simple Notification Service) in order for it to send the required webhooks to SendPortal, so navigate to the SNS page from the AWS Management Console.
+You'll need to configure Amazon's SNS (Simple Notification Service) in order for it to send the required webhooks to ZippyBox, so navigate to the SNS page from the AWS Management Console.
 
 Begin by creating a topic. Select _Topics_ from the menu and click _Create topic_. Everything other than a name is optional at this time.
 
 ![](/imgs/aws/aws-16.png)
 
-We also need to create a subscription to go along with our topic. For the Topic ARN, select the topic that you just created and select `HTTPS` as the protocol. The `Endpoint` will depend on your domain, but must end with `/api/v1/webhooks/aws`. For example, if SendPortal is installed at `https://campaigns.marketing.com`, then each webhook should point to `https://campaigns.marketing.com/api/v1/webhooks/aws`.
+We also need to create a subscription to go along with our topic. For the Topic ARN, select the topic that you just created and select `HTTPS` as the protocol. The `Endpoint` will depend on your domain, but must end with `/api/v1/webhooks/aws`. For example, if ZippyBox is installed at `https://campaigns.marketing.com`, then each webhook should point to `https://campaigns.marketing.com/api/v1/webhooks/aws`.
 
 Do _not_ enable `raw message delivery`, otherwise the webhooks will not be handled correctly.
 
 ![](/imgs/aws/aws-17.png)
 
-The subscription needs to be confirmed before we can use it, but if you've supplied the correct URL for your SendPortal instance, and it's already available to the outside world, we'll do that automatically for you. You should see `Status` transition to `Confirmed`.
+The subscription needs to be confirmed before we can use it, but if you've supplied the correct URL for your ZippyBox instance, and it's already available to the outside world, we'll do that automatically for you. You should see `Status` transition to `Confirmed`.
 
 ![](/imgs/aws/aws-18.png)
 

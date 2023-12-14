@@ -61,12 +61,12 @@ Alternatively, you can authenticate by providing the token as a parameter when m
 
 By default, the API is configured to limit requests to 60 per minute. When this limit is exceeded a `429 Too Many Requests` response will be returned.
 
-The limit can be configured by editing the `SENDPORTAL_THROTTLE_MIDDLEWARE` key in the`.env` file. The value needs to be in the format `{number_of_requests},{every_X_minutes}`.
+The limit can be configured by editing the `ZIPPYBOX_THROTTLE_MIDDLEWARE` key in the`.env` file. The value needs to be in the format `{number_of_requests},{every_X_minutes}`.
 
 For example, this would limit the API to 1000 requests every 5 minutes:
 
 ```markdown
-SENDPORTAL_THROTTLE_MIDDLEWARE=1000,5
+ZIPPYBOX_THROTTLE_MIDDLEWARE=1000,5
 ```
 
 For more information on rate limiting see the official Laravel documentation [here](https://laravel.com/docs/master/routing#rate-limiting).

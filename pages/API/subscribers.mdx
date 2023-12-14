@@ -28,7 +28,7 @@ Retrieve a paginated list of all subscribers.
 
 ```
 GET /api/v1/subscribers HTTP/1.1
-Host: sendportal.local
+Host: ZippyBox.local
 Authorization: Bearer 9w2fN7d4F3Banyv7gihYOWJEH6MvtYyZ
 Accept: application/json
 ```
@@ -58,8 +58,8 @@ Accept: application/json
         }
     ],
     "links": {
-        "first": "<https://sendportal.local/api/v1/subscribers?page=1>",
-        "last": "<https://sendportal.local/api/v1/subscribers?page=1>",
+        "first": "<https://ZippyBox.local/api/v1/subscribers?page=1>",
+        "last": "<https://ZippyBox.local/api/v1/subscribers?page=1>",
         "prev": null,
         "next": null
     },
@@ -67,7 +67,7 @@ Accept: application/json
         "current_page": 1,
         "from": 1,
         "last_page": 1,
-        "path": "<https://sendportal.local/api/v1/subscribers>",
+        "path": "<https://ZippyBox.local/api/v1/subscribers>",
         "per_page": 25,
         "to": 2,
         "total": 2
@@ -108,7 +108,7 @@ Retrieve the details of a single subscriber, including its tags.
 
 ```
 GET /api/v1/subscribers/1 HTTP/1.1
-Host: sendportal.local
+Host: ZippyBox.local
 Authorization: Bearer 9w2fN7d4F3Banyv7gihYOWJEH6MvtYyZ
 Accept: application/json
 ```
@@ -141,7 +141,7 @@ Accept: application/json
 
 Create a new subscriber, optionally including tags that should be assigned to them; or update an existing subscriber based on their email address, optionally including the tags that should be assigned to them.
 
-This endpoint is overloaded to allow for the update of existing subscribers based on the email address provided in the request. This allows for a workflow where the caller of the API needn't know whether the subscriber is already created; this eliminates the need for developers to create different logical paths in their application and also allows subscribers to be updated without prior knowledge of their internal SendPortal ID.
+This endpoint is overloaded to allow for the update of existing subscribers based on the email address provided in the request. This allows for a workflow where the caller of the API needn't know whether the subscriber is already created; this eliminates the need for developers to create different logical paths in their application and also allows subscribers to be updated without prior knowledge of their internal ZippyBox ID.
 
 The rules for creating new subscribers or updating existing subscribers are as follows:
 - If the email address is not currently used for a subscriber in the workspace, then a new subscriber will be created using the email address, name and tags provided
@@ -184,7 +184,7 @@ The rules for creating new subscribers or updating existing subscribers are as f
 
 ```
 POST /api/v1/subscribers HTTP/1.1
-Host: sendportal.local
+Host: ZippyBox.local
 Authorization: Bearer 9w2fN7d4F3Banyv7gihYOWJEH6MvtYyZ
 Accept: application/json
 Content-Type: application/json
@@ -255,7 +255,7 @@ Update the details of the given subscriber.
 
 ```
 PUT /api/v1/subscribers/2 HTTP/1.1
-Host: sendportal.local
+Host: ZippyBox.local
 Authorization: Bearer 9w2fN7d4F3Banyv7gihYOWJEH6MvtYyZ
 Accept: application/json
 Content-Type: application/json
@@ -301,7 +301,7 @@ Delete the given subscriber.
 
 ```
 DELETE /api/v1/subscribers/2 HTTP/1.1
-Host: sendportal.local
+Host: ZippyBox.local
 Authorization: Bearer 9w2fN7d4F3Banyv7gihYOWJEH6MvtYyZ
 Accept: application/json
 ```
